@@ -1,27 +1,7 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: 'home',
-})
-
-const online = useOnline()
-</script>
-
 <template>
   <div>
-    <Logos mb-6 />
-    <Suspense>
-      <ClientOnly>
-        <PageView v-if="online" />
-        <div v-else text-gray:80>
-          You're offline
-        </div>
-      </ClientOnly>
-      <template #fallback>
-        <div italic op50>
-          <span animate-pulse>Loading...</span>
-        </div>
-      </template>
-    </Suspense>
-    <InputEntry />
+    You can check out <ULink to="/houses/6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6">
+      6289a7bb-a1a8-40d5-bed1-bff3a5f62ee6
+    </ULink>
   </div>
 </template>

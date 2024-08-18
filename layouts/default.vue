@@ -1,9 +1,21 @@
 <template>
-  <main class="px-10 py-20 text-center">
-    <slot />
-    <Footer />
-    <div class="mx-auto mt-5 text-center text-sm opacity-25">
-      [Default Layout]
+  <main>
+    <nav class="border-b border-b-teal-300 bg-teal-950 p-4">
+      <ul class="flex gap-4">
+        <li>
+          <ULink to="/">
+            Home
+          </ULink>
+        </li>
+        <li>
+          <ULink to="/houses">
+            Houses
+          </ULink>
+        </li>
+      </ul>
+    </nav>
+    <div>
+      <slot />
     </div>
   </main>
 </template>
