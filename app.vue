@@ -2,6 +2,12 @@
 import { appName } from '~/constants'
 
 useHead({
+  titleTemplate: (titleChunk) => {
+    return titleChunk ? `${titleChunk} - ${appName}` : appName
+  },
+})
+
+useHead({
   title: appName,
 })
 </script>

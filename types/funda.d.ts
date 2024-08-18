@@ -253,7 +253,7 @@ declare global {
     'AangebodenSindsTekst': string
     'AantalBadkamers': number
     'AantalKamers': number
-    'AantalSlaapkamers?': number
+    'AantalSlaapkamers'?: number
     'AantalWoonlagen': string
     'Aanvaarding': string
     'Adres': string

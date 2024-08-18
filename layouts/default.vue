@@ -1,19 +1,6 @@
 <template>
-  <main>
-    <nav class="border-b border-b-teal-300 bg-teal-950 p-4">
-      <ul class="flex gap-4">
-        <li>
-          <ULink to="/">
-            Home
-          </ULink>
-        </li>
-        <li>
-          <ULink to="/houses">
-            Houses
-          </ULink>
-        </li>
-      </ul>
-    </nav>
+  <main class="bg-zinc-50 min-h-[100dvh]">
+    <ApplicationNavigation />
     <div>
       <slot />
     </div>
